@@ -1,0 +1,144 @@
+body {
+  background-color: #cdf6fb;
+  font-family: Helvetica, arial, sans-serif;
+  margin: 30px;
+  padding: 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+  padding: 60px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+}
+
+.header p {
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  color: #fa87db;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+.hero-video {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  margin: 30px 0;
+}
+
+.hero-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+	text-align: center;
+}
+
+.calendar header {
+	position: relative;
+}
+
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #00addf;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+
+.event {
+	cursor: pointer;
+	position: relative;
+}
+
+.event:after {
+	background: #00addf;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+.event.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
+}
