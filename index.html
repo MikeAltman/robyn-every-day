@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
 
-    <title>Robyn Every Day | A Dancing Journal</title>
-    <meta name="description" content="">
+  <title>Robyn Every Day | A Dancing Journal</title>
+  <meta name="description" content="">
 
-    <link href="http://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="container">
@@ -19,109 +19,84 @@
     </div>
 
     <div class="hero-video">
-      <iframe src="https://www.youtube.com/embed/AJZrNL8DnIQ" frameborder="0" allowfullscreen></iframe>
+      <iframe class="iframe-obj" src="https://www.youtube.com/embed/AJZrNL8DnIQ" frameborder="0" allowfullscreen></iframe>
     </div>
-  <div class="container">
 
     <div class="calendar">
+      <div class="calendar-header row">
+        <div class="day-header">Monday</div>
+        <div class="day-header">Tuesday</div>
+        <div class="day-header">Wednesday</div>
+        <div class="day-header">Thursday</div>
+        <div class="day-header">Friday</div>
+        <div class="day-header">Saturday</div>
+        <div class="day-header">Sunday</div>
+      </div>
 
-      <header>        
+      <div class="calendar-body">
+        <div class="row">
+          <div class="day empty"></div>
+          <div data-embed="AJZrNL8DnIQ" class="day"><span class="date">1</span> <span class="event-name">Greenpoint</span></div>
+          <div data-embed="x3FAk-XbGOw" class="day"><span class="date">2</span> <span class="event-name">Shakeshack</span></div>
+          <div data-embed="AJZrNL8DnIQ" class="day"><span class="date">3</span> <span class="event-name">Park Slope</span></div>
+          <div data-embed="x3FAk-XbGOw" class="day"><span class="date">4</span> <span class="event-name">Tribeca</span></div>
+          <div data-embed="AJZrNL8DnIQ" class="day"><span class="date">5</span> <span class="event-name">Brooklyn Bridge</span></div>
+          <div data-embed="x3FAk-XbGOw" class="day"><span class="date">6</span> <span class="event-name">Time Square</span></div>
+        </div>
 
-        <h2>September</h2>
+        <div class="row">
+          <div class="day"><span class="date">7</span> <span class="event-name">...</span></div>
+          <div class="day"><span class="date">8</span></div>
+          <div class="day"><span class="date">9</span></div>
+          <div class="day"><span class="date">10</span></div>
+          <div class="day"><span class="date">11</span></div>
+          <div class="day"><span class="date">12</span></div>
+          <div class="day"><span class="date">13</span></div>
+        </div>
 
-        <a class="btn-prev fontawesome-angle-left" href="#"></a>
-        <a class="btn-next fontawesome-angle-right" href="#"></a>
+        <div class="row">
+          <div class="day"><span class="date">14</span></div>
+          <div class="day"><span class="date">15</span></div>
+          <div class="day"><span class="date">16</span></div>
+          <div class="day"><span class="date">17</span></div>
+          <div class="day"><span class="date">18</span></div>
+          <div class="day"><span class="date">19</span></div>
+          <div class="day"><span class="date">20</span></div>
+        </div>
 
-      </header>
-      
-      <table>
-      
-        <thead>
-          
-          <tr>
-            
-            <td>Mo</td>
-            <td>Tu</td>
-            <td>We</td>
-            <td>Th</td>
-            <td>Fr</td>
-            <td>Sa</td>
-            <td>Su</td>
+        <div class="row">
+          <div class="day"><span class="date">21</span></div>
+          <div class="day"><span class="date">22</span></div>
+          <div class="day"><span class="date">23</span></div>
+          <div class="day"><span class="date">24</span></div>
+          <div class="day"><span class="date">25</span></div>
+          <div class="day"><span class="date">26</span></div>
+          <div class="day"><span class="date">27</span></div>
+        </div>
 
-          </tr>
-
-        </thead>
-
-        <tbody>
-          
-          <tr>
-            <td class="prev-month">26</td>
-            <td class="prev-month">27</td>
-            <td class="prev-month">28</td>
-            <td class="prev-month">29</td>
-            <td class="prev-month">30</td>
-            <td class="prev-month">31</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td class="event">10</td>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-            <td class="event">21</td>
-            <td>22</td>
-          </tr>
-
-          <tr>
-            <td class="current-day event">23</td>
-            <td>24</td>
-            <td>25</td>
-            <td>26</td>
-            <td>27</td>
-            <td>28</td>
-            <td>29</td>
-          </tr>
-          <tr>
-            <td>30</td>
-            <td class="next-month">1</td>
-            <td class="next-month">2</td>
-            <td class="next-month">3</td>
-            <td class="next-month">4</td>
-            <td class="next-month">5</td>
-            <td class="next-month">6</td>
-          </tr>
-
-        </tbody>
-
-      </table>
-
-    </div> <!-- end calendar -->
-
-  </div> <!-- end container -->
-
-
-    <div class="all-other-videos">
-
+        <div class="row">
+          <div class="day"><span class="date">28</span></div>
+          <div class="day"><span class="date">29</span></div>
+          <div class="day"><span class="date">30</span></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $('[data-embed]').on('click', function(){
+      var videoObj = '<iframe class="iframe-obj" src="https://www.youtube.com/embed/' + $(this).data('embed') + '" frameborder="0" allowfullscreen></iframe>';
+      $('.iframe-obj').remove();
+      $('.hero-video').append(videoObj);
+      $('html, body').scrollTop(0);
+    });
+  });
+  </script>
 </body>
 </html>
