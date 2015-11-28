@@ -31,6 +31,7 @@ h1 {
   font-weight: normal;
   margin: 0;
   text-transform: uppercase;
+
 }
 
 @media (min-width: 640px) {
@@ -110,7 +111,7 @@ h1 {
   .day-header {
     color: #666;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 16px;
     width: 100px;
     text-align: center;
   }
@@ -120,10 +121,11 @@ h1 {
     height: 100px;
     width: 100px;
     height: 100px;
-    border: solid 1px #f8bae7;
+    border: solid 3px #f8bae7;
     margin-top: 20px;
     margin-bottom: 0;
     padding: 10px;
+    border-radius: 10px;
     box-sizing: border-box;
     transition: 250ms border-color linear;
   }
@@ -138,7 +140,7 @@ h1 {
 
   .date {
     display: block;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .date:after {
@@ -147,7 +149,12 @@ h1 {
 
   .event-name {
     font-size: 12px;
+    font-weight: bolder;
     margin-top: 10px;
     display: block;
+    margin-bottom: 10px;
+  }
+  a:link {
+    color: #cdf6fb;
   }
 }
