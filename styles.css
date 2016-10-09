@@ -18,7 +18,7 @@ body {
 }
 
 .header p {
-  max-width: 380px;
+  max-width: 440px;
   margin-left: auto;
   margin-right: auto;
   color: #666;
@@ -74,6 +74,13 @@ h1 {
 
 .day.empty {
   border: none;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .day.empty {
+    display: block;
+  }
 }
 
 .date {
