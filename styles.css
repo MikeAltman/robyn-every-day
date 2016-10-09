@@ -25,12 +25,17 @@ body {
   font-weight: bold;
 }
 
+.social {
+  text-align: center;
+}
+
 h1 {
   font-family: 'Fjalla One', sans-serif;
   color: #fa87db;
   font-weight: normal;
   margin: 0;
   text-transform: uppercase;
+
 }
 
 @media (min-width: 640px) {
@@ -83,6 +88,96 @@ h1 {
   display: inline-block;
 }
 
+/* Wrapper */
+.icon-button {
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 0;
+}
+.icon-button:hover span {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 20px;
+  margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 2.6rem;
+  z-index: 10;
+}
+
+/*
+
+Twitter blue:  #63CCEE;
+Facebook blue:  #507ABD;
+
+*/
+
+
+.twitter {
+  background-color: rgba(64,153,255,.7);
+}
+.facebook  {
+  background-color: rgba(80,122,189,.7);
+}
+
+
+/*HOVER*/
+
+.twitter span{
+  background-color: rgba(64,153,255,.7);
+}
+.facebook span {
+  background-color: rgba(80,122,189,.7);
+}
+
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+ {
+  color: white;
+}
+
 @media (min-width: 1024px) {
   body {
     margin: 30px;
@@ -110,7 +205,7 @@ h1 {
   .day-header {
     color: #666;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 16px;
     width: 100px;
     text-align: center;
   }
@@ -120,10 +215,11 @@ h1 {
     height: 100px;
     width: 100px;
     height: 100px;
-    border: solid 1px #f8bae7;
+    border: solid 3px #f8bae7;
     margin-top: 20px;
     margin-bottom: 0;
     padding: 10px;
+    border-radius: 10px;
     box-sizing: border-box;
     transition: 250ms border-color linear;
   }
@@ -138,16 +234,39 @@ h1 {
 
   .date {
     display: block;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .date:after {
     display: none;
   }
 
+   .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
   .event-name {
     font-size: 12px;
+    font-weight: bolder;
     margin-top: 10px;
     display: block;
+    margin-bottom: 10px;
   }
-}
